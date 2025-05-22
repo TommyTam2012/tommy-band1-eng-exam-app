@@ -16,7 +16,7 @@ let currentExamId = "";
 
 function setExam(examId) {
   currentExamId = examId;
-  const pdfUrl = `/exam/band1/${examId}.pdf`;
+  const pdfUrl = `/exam/band/${examId}.pdf`; // ✅ Updated path
   window.open(pdfUrl, "_blank");
   console.log(`📘 Exam set to ${examId}`);
 }
